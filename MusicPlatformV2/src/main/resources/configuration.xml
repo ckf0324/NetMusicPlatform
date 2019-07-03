@@ -3,7 +3,8 @@
 <configuration>
 	<typeAliases>
 		<typeAlias type="com.xkm.nmp.pojo.User" alias="User"/>
-		
+		<typeAlias type="com.xkm.nmp.pojo.Music" alias="Music"/>
+		<typeAlias type="com.xkm.nmp.pojo.MusicList" alias="MusicList"/>
 	</typeAliases>
 	
 	<!-- 定义环境 -->
@@ -39,6 +40,8 @@
 	<mappers>
 	
 		<mapper resource="com/xkm/nmp/pojo/mapper/UserMapper.xml"/>
+		<mapper resource="com/xkm/nmp/pojo/mapper/MusicMapper.xml"/>
+		<mapper resource="com/xkm/nmp/pojo/mapper/MusicListMapper.xml"/>
 		<!-- 注解 -->
 		<!--<mapper class="com.newer.hrs.dao.IEmpDAO"/>-->
 	</mappers>

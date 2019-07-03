@@ -13,30 +13,35 @@
     left: 15%;
 }
 
+.searchNav {
+    position: absolute;
+    left: 17%;
+    width: 18%;
+}
+
+.searchIconNav {
+    position: absolute;
+    left: 20%;
+}
+
 .loginNav {
     position: absolute;
-    left: 16%;
+    left: 59%;
 }
 
 .registerNav {
     position: absolute;
-    left: 17%;
-}
-
-.searchNav {
-    position: absolute;
-    left: 28%;
-    width: 12%;
+    left: 60%;
 }
 
 .creatorCenterNav {
     position: absolute;
-    left: 42%;
+    left: 40%;
 }
 
 .userNav {
     position: absolute;
-    left: 45%;
+    left: 41%;
 }
 
 
@@ -73,7 +78,8 @@ ul {
     width: 50px;
     height: 50px;
     background-color: rgba(0, 0, 0, 0.2);
-    font-size: 22px;
+    font-size: 27px;
+    font-weight: bolder;
     text-align: center;
     line-height: 50px;
     z-index: 10;
@@ -145,6 +151,36 @@ ul {
 }
 
 
+/*歌单*/
+
+.musicListDiv {
+    background-color: rgba(225, 225, 225, 0.75);
+    margin: 10px;
+    width: 250px;
+    height: 75px;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    color: rgba(25, 25, 25, 0.90);
+    font-size: 16px;
+    font-family: 'Times New Roman';
+}
+
+.musicListDiv>ul>li {
+    float: left;
+}
+
+.musicListImg {
+    width: 55px;
+    height: 55px;
+    margin-right: 10px;
+    border-radius: 50%
+}
+
+
+/*表格*/
+
+
 /*底部播放区*/
 
 .back1 {
@@ -155,15 +191,19 @@ ul {
 }
 
 audio {
+    position: fixed;
+    bottom: 0;
+    left: 15%;
+    z-index: 99;
     display: block;
-    width: 100%;
+    width: 70%;
 }
 
 .fix {
     position: fixed;
     bottom: 0;
     left: 0;
-    z-index: 99;
+    z-index: 90;
     background-color: rgba(0, 0, 0, .5);
     right: 0;
     text-align: center;

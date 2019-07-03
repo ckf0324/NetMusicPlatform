@@ -4,6 +4,9 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <listener>
+  	<listener-class>com.xkm.nmp.listener.LoginListener</listener-class>
+  </listener>
   <servlet>
   	<servlet-name>LoginServlet</servlet-name>
   	<display-name>LoginServlet</display-name>
@@ -11,16 +14,40 @@
   	<servlet-class>com.xkm.nmp.web.LoginServlet</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>RegisterServlet</servlet-name>
-  	<display-name>RegisterServlet</display-name>
-  	<description></description>
-  	<servlet-class>com.xkm.nmp.web.RegisterServlet</servlet-class>
-  </servlet>
-  <servlet>
   	<servlet-name>RegisterServlett</servlet-name>
   	<display-name>RegisterServlett</display-name>
   	<description></description>
   	<servlet-class>com.xkm.nmp.web.RegisterServlett</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>UploadMusicServlet</servlet-name>
+  	<display-name>UploadMusicServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.xkm.nmp.web.UploadMusicServlet</servlet-class>
+  </servlet>
+  <servlet>
+   <servlet-name>SearchServlet</servlet-name>
+   <display-name>SearchServlet</display-name>
+   <description></description>
+   <servlet-class>com.xkm.nmp.web.SearchServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>MusicListServlet</servlet-name>
+  	<display-name>MusicListServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.xkm.nmp.web.MusicListServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>UserServlet</servlet-name>
+  	<display-name>UserServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.xkm.nmp.web.UserServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>MusicServlet</servlet-name>
+  	<display-name>MusicServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.xkm.nmp.web.MusicServlet</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>LoginServlet</servlet-name>
@@ -29,5 +56,25 @@
   <servlet-mapping>
   	<servlet-name>RegisterServlett</servlet-name>
   	<url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UploadMusicServlet</servlet-name>
+  	<url-pattern>/upload</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+   <servlet-name>SearchServlet</servlet-name>
+   <url-pattern>/search</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>MusicListServlet</servlet-name>
+  	<url-pattern>/musiclist</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UserServlet</servlet-name>
+  	<url-pattern>/user</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>MusicServlet</servlet-name>
+  	<url-pattern>/music</url-pattern>
   </servlet-mapping>
 </web-app>
